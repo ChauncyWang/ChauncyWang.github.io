@@ -256,17 +256,52 @@
 <h2 id="1-3-文件名区分大小写"><a href="#1-3-文件名区分大小写" class="headerlink" title="1.3 文件名区分大小写"></a>1.3 文件名区分大小写</h2><ul>
 <li>Linux 文件名是区分大小写的。</li>
 </ul>
-<h2 id="1-4-命名时不应使用的字符"><a href="#1-4-命名时不应使用的字符" class="headerlink" title="1.4 命名时不应使用的字符"></a>1.4 命名时不应使用的字符</h2><p>|字符|建议|</p>
-<p>|:——:|:———-:|</p>
-<p>|/|绝对不能使用，不能被转义|</p>
-<p>|&#92;|必须转义，避免使用|</p>
-<p>|-|不能作为文件名或目录名的开始|</p>
-<p>|[]|必须转义。避免使用|</p>
-<p>|{}|必须转义。避免使用|</p>
-<p>|*|必须转义。避免使用|</p>
-<p>|?|必须转义。避免使用|</p>
-<p>|’|必须转义。避免使用|</p>
-<p>|”|必须转义。避免使用|</p>
+<h2 id="1-4-命名时不应使用的字符"><a href="#1-4-命名时不应使用的字符" class="headerlink" title="1.4 命名时不应使用的字符"></a>1.4 命名时不应使用的字符</h2><table>
+<thead>
+<tr>
+<th style="text-align:center">字符</th>
+<th style="text-align:center">建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">/</td>
+<td style="text-align:center">绝对不能使用，不能被转义</td>
+</tr>
+<tr>
+<td style="text-align:center">&#92;</td>
+<td style="text-align:center">必须转义，避免使用</td>
+</tr>
+<tr>
+<td style="text-align:center">-</td>
+<td style="text-align:center">不能作为文件名或目录名的开始</td>
+</tr>
+<tr>
+<td style="text-align:center">[]</td>
+<td style="text-align:center">必须转义。避免使用</td>
+</tr>
+<tr>
+<td style="text-align:center">{}</td>
+<td style="text-align:center">必须转义。避免使用</td>
+</tr>
+<tr>
+<td style="text-align:center">*</td>
+<td style="text-align:center">必须转义。避免使用</td>
+</tr>
+<tr>
+<td style="text-align:center">?</td>
+<td style="text-align:center">必须转义。避免使用</td>
+</tr>
+<tr>
+<td style="text-align:center">‘</td>
+<td style="text-align:center">必须转义。避免使用</td>
+</tr>
+<tr>
+<td style="text-align:center">“</td>
+<td style="text-align:center">必须转义。避免使用</td>
+</tr>
+</tbody>
+</table>
 <h2 id="1-5-通配符及其含义"><a href="#1-5-通配符及其含义" class="headerlink" title="1.5 通配符及其含义"></a>1.5 通配符及其含义</h2><ul>
 <li><p>“*”匹配0或多个任意字符。</p>
 </li>
