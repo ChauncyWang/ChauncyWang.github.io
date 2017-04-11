@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>linux基本知识 | Hexo</title>
+  <title>swing Image转BufferedImage | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一章 基本概念1.1 一切皆文件 在linux系统中，一切皆文件。  文件夹也是一种特殊的文件。   1.2 文件的最大长度 linux 文件名最多可以长达255个字符。  1.3 文件名区分大小写 Linux 文件名是区分大小写的。  1.4 命名时不应使用的字符   字符 建议     / 绝对不能使用，不能被转义   &amp;#92; 必须转义，避免使用   - 不能作为文件名或目录名的开始">
-<meta name="keywords" content="linux">
+  <meta name="description" content="在swing中我们经常会使用Image和BufferedImage来帮助我们绘图。但是BufferedImage可以强转为Image,而反之不行。我们可以使用一下代码来转换: 转 bufferedimage12345678910public class Tools&amp;#123;	public static BufferedImage(Image image,int type) &amp;#123;		Buf">
+<meta name="keywords" content="swing,java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="linux基本知识">
-<meta property="og:url" content="https://chauncywang.github.io/2017/04/11/linux/index.html">
+<meta property="og:title" content="swing Image转BufferedImage">
+<meta property="og:url" content="https://chauncywang.github.io/2017/04/11/swing-Image转BufferedImage/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一章 基本概念1.1 一切皆文件 在linux系统中，一切皆文件。  文件夹也是一种特殊的文件。   1.2 文件的最大长度 linux 文件名最多可以长达255个字符。  1.3 文件名区分大小写 Linux 文件名是区分大小写的。  1.4 命名时不应使用的字符   字符 建议     / 绝对不能使用，不能被转义   &amp;#92; 必须转义，避免使用   - 不能作为文件名或目录名的开始">
-<meta property="og:updated_time" content="2017-04-10T12:01:18.416Z">
+<meta property="og:description" content="在swing中我们经常会使用Image和BufferedImage来帮助我们绘图。但是BufferedImage可以强转为Image,而反之不行。我们可以使用一下代码来转换: 转 bufferedimage12345678910public class Tools&amp;#123;	public static BufferedImage(Image image,int type) &amp;#123;		Buf">
+<meta property="og:updated_time" content="2017-04-11T13:29:20.758Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="linux基本知识">
-<meta name="twitter:description" content="第一章 基本概念1.1 一切皆文件 在linux系统中，一切皆文件。  文件夹也是一种特殊的文件。   1.2 文件的最大长度 linux 文件名最多可以长达255个字符。  1.3 文件名区分大小写 Linux 文件名是区分大小写的。  1.4 命名时不应使用的字符   字符 建议     / 绝对不能使用，不能被转义   &amp;#92; 必须转义，避免使用   - 不能作为文件名或目录名的开始">
+<meta name="twitter:title" content="swing Image转BufferedImage">
+<meta name="twitter:description" content="在swing中我们经常会使用Image和BufferedImage来帮助我们绘图。但是BufferedImage可以强转为Image,而反之不行。我们可以使用一下代码来转换: 转 bufferedimage12345678910public class Tools&amp;#123;	public static BufferedImage(Image image,int type) &amp;#123;		Buf">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -217,11 +217,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-linux" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-swing-Image转BufferedImage" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/04/11/linux/" class="article-date">
-      <time datetime="2017-04-10T19:40:56.000Z" itemprop="datePublished">2017-04-11</time>
+      <a href="/2017/04/11/swing-Image转BufferedImage/" class="article-date">
+      <time datetime="2017-04-11T13:22:05.000Z" itemprop="datePublished">2017-04-11</time>
 </a>
     </div>
   
@@ -234,7 +234,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      linux基本知识
+      swing Image转BufferedImage
     </h1>
   
 
@@ -245,7 +245,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/swing/">swing</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -255,75 +255,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="第一章-基本概念"><a href="#第一章-基本概念" class="headerlink" title="第一章 基本概念"></a>第一章 基本概念</h1><h2 id="1-1-一切皆文件"><a href="#1-1-一切皆文件" class="headerlink" title="1.1 一切皆文件"></a>1.1 一切皆文件</h2><ol>
-<li><p>在linux系统中，一切皆文件。</p>
-</li>
-<li><p>文件夹也是一种特殊的文件。</p>
-</li>
-</ol>
-<h2 id="1-2-文件的最大长度"><a href="#1-2-文件的最大长度" class="headerlink" title="1.2 文件的最大长度"></a>1.2 文件的最大长度</h2><ul>
-<li>linux 文件名最多可以长达255个字符。</li>
-</ul>
-<h2 id="1-3-文件名区分大小写"><a href="#1-3-文件名区分大小写" class="headerlink" title="1.3 文件名区分大小写"></a>1.3 文件名区分大小写</h2><ul>
-<li>Linux 文件名是区分大小写的。</li>
-</ul>
-<h2 id="1-4-命名时不应使用的字符"><a href="#1-4-命名时不应使用的字符" class="headerlink" title="1.4 命名时不应使用的字符"></a>1.4 命名时不应使用的字符</h2><table>
-<thead>
-<tr>
-<th style="text-align:center">字符</th>
-<th style="text-align:center">建议</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">/</td>
-<td style="text-align:center">绝对不能使用，不能被转义</td>
-</tr>
-<tr>
-<td style="text-align:center">&#92;</td>
-<td style="text-align:center">必须转义，避免使用</td>
-</tr>
-<tr>
-<td style="text-align:center">-</td>
-<td style="text-align:center">不能作为文件名或目录名的开始</td>
-</tr>
-<tr>
-<td style="text-align:center">[]</td>
-<td style="text-align:center">必须转义。避免使用</td>
-</tr>
-<tr>
-<td style="text-align:center">{}</td>
-<td style="text-align:center">必须转义。避免使用</td>
-</tr>
-<tr>
-<td style="text-align:center">*</td>
-<td style="text-align:center">必须转义。避免使用</td>
-</tr>
-<tr>
-<td style="text-align:center">?</td>
-<td style="text-align:center">必须转义。避免使用</td>
-</tr>
-<tr>
-<td style="text-align:center">‘</td>
-<td style="text-align:center">必须转义。避免使用</td>
-</tr>
-<tr>
-<td style="text-align:center">“</td>
-<td style="text-align:center">必须转义。避免使用</td>
-</tr>
-</tbody>
-</table>
-<h2 id="1-5-通配符及其含义"><a href="#1-5-通配符及其含义" class="headerlink" title="1.5 通配符及其含义"></a>1.5 通配符及其含义</h2><ul>
-<li><p>“*”匹配0或多个任意字符。</p>
-</li>
-<li><p>“?”匹配单个字符。</p>
-</li>
-<li><p>“[]”可以匹配一组单个字符串。</p>
-</li>
-</ul>
-<h1 id="第二章-基础命令"><a href="#第二章-基础命令" class="headerlink" title="第二章 基础命令"></a>第二章 基础命令</h1><h2 id="2-1-列出文件和文件夹"><a href="#2-1-列出文件和文件夹" class="headerlink" title="2.1 列出文件和文件夹"></a>2.1 列出文件和文件夹</h2><ul>
-<li>ls</li>
-</ul>
+        <p>在swing中我们经常会使用Image和BufferedImage来帮助我们绘图。<br>但是BufferedImage可以强转为Image,而反之不行。<br>我们可以使用一下代码来转换:</p>
+<figure class="highlight plain"><figcaption><span>转 bufferedimage</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">public class Tools&#123;</div><div class="line">	public static BufferedImage(Image image,int type) &#123;</div><div class="line">		BufferedImage bi = new BufferedImage(image.getWidth(null),image.getHeight(null),type);</div><div class="line">		Graphics g = bi.createGraphics();</div><div class="line">		g.drawImage(image, 0, 0, null);</div><div class="line">		g.dispose();</div><div class="line"></div><div class="line">		return bi;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
       
@@ -378,13 +311,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/04/11/linux/">linux基本知识</a></p>
+        <p><span>本文标题:</span><a href="/2017/04/11/swing-Image转BufferedImage/">swing Image转BufferedImage</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 ChauncyWang 的个人博客">ChauncyWang</a></p>
-        <p><span>发布时间:</span>2017年04月11日 - 03时40分</p>
-        <p><span>最后更新:</span>2017年04月10日 - 20时01分</p>
+        <p><span>发布时间:</span>2017年04月11日 - 21时22分</p>
+        <p><span>最后更新:</span>2017年04月11日 - 21时29分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/04/11/linux/" title="linux基本知识">https://chauncywang.github.io/2017/04/11/linux/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://chauncywang.github.io/2017/04/11/linux/　　作者: ChauncyWang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/04/11/swing-Image转BufferedImage/" title="swing Image转BufferedImage">https://chauncywang.github.io/2017/04/11/swing-Image转BufferedImage/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://chauncywang.github.io/2017/04/11/swing-Image转BufferedImage/　　作者: ChauncyWang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -397,20 +330,15 @@
 
 <nav id="article-nav">
   
-    <a href="/2017/04/10/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/04/11/JFormDesigner工具/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          Hello World
+          JFormDesigner工具
         
       </div>
     </a>
   
-  
-    <a href="/2017/04/11/JFormDesigner工具/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JFormDesigner工具</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
   
 </nav>
 
@@ -419,7 +347,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第一章-基本概念"><span class="toc-number">1.</span> <span class="toc-text">第一章 基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-一切皆文件"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 一切皆文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-文件的最大长度"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 文件的最大长度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-文件名区分大小写"><span class="toc-number">1.3.</span> <span class="toc-text">1.3 文件名区分大小写</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-4-命名时不应使用的字符"><span class="toc-number">1.4.</span> <span class="toc-text">1.4 命名时不应使用的字符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-5-通配符及其含义"><span class="toc-number">1.5.</span> <span class="toc-text">1.5 通配符及其含义</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第二章-基础命令"><span class="toc-number">2.</span> <span class="toc-text">第二章 基础命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-列出文件和文件夹"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 列出文件和文件夹</span></a></li></ol></li></ol>
+    
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -467,7 +395,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2017/04/11/linux/" data-title="linux基本知识" data-url="https://chauncywang.github.io/2017/04/11/linux/"></div>
+    <div class="ds-thread" data-thread-key="2017/04/11/swing-Image转BufferedImage/" data-title="swing Image转BufferedImage" data-url="https://chauncywang.github.io/2017/04/11/swing-Image转BufferedImage/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -490,15 +418,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/04/10/hello-world/" title="上一篇: Hello World">
+            <a href="/2017/04/11/JFormDesigner工具/" title="上一篇: JFormDesigner工具">
                 <i class="fa fa-angle-left"></i>
             </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2017/04/11/JFormDesigner工具/" title="下一篇: JFormDesigner工具">
-                <i class="fa fa-angle-right"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
     </div>
     <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/04/11/swing-Image转BufferedImage/">swing Image转BufferedImage</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/11/JFormDesigner工具/">JFormDesigner工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/11/linux/">linux基本知识</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/10/hello-world/">Hello World</a></li></ul>

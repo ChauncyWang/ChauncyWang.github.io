@@ -141,7 +141,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/swing/" style="font-size: 10px;">swing</a>
+                        <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/swing/" style="font-size: 20px;">swing</a>
                     </div>
                 </section>
                 
@@ -216,6 +216,66 @@
     </div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-swing-Image转BufferedImage" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/04/11/swing-Image转BufferedImage/" class="article-date">
+      <time datetime="2017-04-11T13:22:05.000Z" itemprop="datePublished">2017-04-11</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/04/11/swing-Image转BufferedImage/">swing Image转BufferedImage</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>在swing中我们经常会使用Image和BufferedImage来帮助我们绘图。<br>但是BufferedImage可以强转为Image,而反之不行。<br>我们可以使用一下代码来转换:</p>
+<figure class="highlight plain"><figcaption><span>转 bufferedimage</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">public class Tools&#123;</div><div class="line">	public static BufferedImage(Image image,int type) &#123;</div><div class="line">		BufferedImage bi = new BufferedImage(image.getWidth(null),image.getHeight(null),type);</div><div class="line">		Graphics g = bi.createGraphics();</div><div class="line">		g.drawImage(image, 0, 0, null);</div><div class="line">		g.dispose();</div><div class="line"></div><div class="line">		return bi;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/swing/">swing</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-JFormDesigner工具" class="article article-type-post" itemscope itemprop="blogPost">
   
